@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Приветственный сайт</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Привет!</div>
+        <ul class="nav__links">
+          <li><a href="#about">О сайте</a></li>
+          <li><a href="#features">Особенности</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">
+          <span class="theme-toggle__icon">🌙</span>
+        </button>
+      </nav>
+      <div class="hero__content">
+        <h1>Добро пожаловать!</h1>
+        <p>
+          Это небольшой сайт, созданный специально по вашей просьбе. Он демонстрирует
+          чистый дизайн, плавные анимации и переключение темы.
+        </p>
+        <a class="hero__cta" href="#features">Узнать больше</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="section__inner">
+          <h2>О сайте</h2>
+          <p>
+            Этот сайт создан, чтобы показать, как можно быстро собрать современную
+            лендинг-страницу с использованием только HTML, CSS и небольшой щепотки
+            JavaScript. Он адаптивен и отлично смотрится как на телефонах, так и на
+            больших экранах.
+          </p>
+        </div>
+      </section>
+
+      <section id="features" class="section section--alt">
+        <div class="section__inner">
+          <h2>Особенности</h2>
+          <div class="features">
+            <article class="card">
+              <h3>Современный дизайн</h3>
+              <p>Используем свежие цвета, плавные переходы и просторную верстку.</p>
+            </article>
+            <article class="card">
+              <h3>Адаптивность</h3>
+              <p>Страница прекрасно подстраивается под экраны любого размера.</p>
+            </article>
+            <article class="card">
+              <h3>Переключение темы</h3>
+              <p>Любите темную тему? Просто нажмите на кнопку в шапке сайта.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section__inner">
+          <h2>Контакты</h2>
+          <p>
+            Хотите такой же сайт или больше функциональности? Напишите письмо на
+            <a href="mailto:hello@example.com">hello@example.com</a> или свяжитесь через
+            социальные сети.
+          </p>
+          <div class="socials">
+            <a href="https://t.me/example" target="_blank" rel="noopener" aria-label="Telegram">
+              <span aria-hidden="true">Telegram</span>
+            </a>
+            <a href="https://vk.com/example" target="_blank" rel="noopener" aria-label="VK">
+              <span aria-hidden="true">VK</span>
+            </a>
+            <a href="https://instagram.com/example" target="_blank" rel="noopener" aria-label="Instagram">
+              <span aria-hidden="true">Instagram</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Приветственный сайт. Сделано с заботой.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
